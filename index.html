@@ -165,7 +165,7 @@
             text-decoration: underline;
         }
 
-        /* Stylized Text Badge (Replaces Unlicensed Images) */
+        /* Stylized Text Badge */
         .card-badge {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: #38bdf8;
@@ -182,7 +182,7 @@
             border-left: 4px solid #1d4ed8;
         }
 
-        /* User Photo Styling (100% Safe) */
+        /* User Photo Styling */
         .card-img-safe {
             max-width: 100%;
             max-height: 220px;
@@ -192,6 +192,12 @@
             border-radius: 6px;
             margin-bottom: 16px;
             display: block;
+        }
+
+        /* Twitter Embed Wrapper */
+        .embed-container {
+            margin-bottom: 16px;
+            max-width: 500px;
         }
 
         /* Footer */
@@ -210,13 +216,14 @@
             .profile-img { width: 220px; height: 220px; }
         }
     </style>
+    <!-- Twitter/X Widget Script -->
+    <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 </head>
 <body>
 
     <!-- Header / Intro -->
     <header>
         <div class="container">
-            <!-- Header Photo (Your Personal Photo - Safe) -->
             <img src="Greg Johnson Header Photo.jpg" alt="Greg Johnson" class="profile-img">
             
             <h1>Greg Johnson</h1>
@@ -243,7 +250,6 @@
             <div class="card-grid">
 
                 <div class="card">
-                    <!-- Personal/Safe Photo -->
                     <img src="Article 8.jpg" alt="Ben Grable and James Cooper at Futures Game" class="card-img-safe">
                     <div class="meta">The Trentonian • MLB All-Star Week (July 2026)</div>
                     <h3>Ben Grable, James Cooper Proud to Represent Yankees at MLB All-Star Futures Game</h3>
@@ -259,10 +265,17 @@
                     <a href="https://www.trentonian.com/2026/07/14/yankees-ben-rice-fulfills-dream-of-competing-with-dad-in-mlb-home-run-derby/?share=romitsberti2bootrdeg" class="read-btn" target="_blank">Read Full Article &rarr;</a>
                 </div>
 
+                <!-- ARTICLE 3 WITH X/TWITTER EMBED -->
                 <div class="card">
-                    <div class="card-badge">⚾ Column & Analysis</div>
                     <div class="meta">The Trentonian • July 2026</div>
                     <h3>Captivating Home Run Derby Highlights Fun MLB All-Star Week in Philadelphia</h3>
+                    
+                    <div class="embed-container">
+                        <blockquote class="twitter-tweet">
+                            <p lang="en" dir="ltr">Some closing thoughts on MLB All-Star Week, highlighted by a captivating Home Run Derby and a palpable buzz in Philadelphia for three days: <a href="https://t.co/Hk9nvt26hi">https://t.co/Hk9nvt26hi</a></p>&mdash; Greg Johnson (@gregp_j) <a href="https://x.com/gregp_j/status/2077524468180590883?ref_src=twsrc%5Etfw">July 15, 2026</a>
+                        </blockquote>
+                    </div>
+
                     <p>Column reflecting on the atmosphere, fan experience and top storylines from 2026 MLB All-Star festivities.</p>
                     <a href="https://www.trentonian.com/2026/07/15/johnson-captivating-home-run-derby-highlights-fun-mlb-all-star-week-in-philadelphia/?share=hehmstoo5remn0yrrnfw" class="read-btn" target="_blank">Read Full Article &rarr;</a>
                 </div>
