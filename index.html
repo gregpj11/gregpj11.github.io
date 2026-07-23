@@ -38,7 +38,7 @@
             text-align: center;
         }
 
-        /* Profile Picture Styling - Increased Size */
+        /* Profile Picture Styling */
         .profile-img {
             width: 280px;
             height: 280px;
@@ -121,6 +121,7 @@
             border-radius: 8px;
             padding: 24px;
             transition: transform 0.15s, box-shadow 0.15s;
+            position: relative;
         }
 
         .card:hover {
@@ -134,6 +135,9 @@
             text-transform: uppercase;
             font-weight: 700;
             margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .card h3 {
@@ -161,8 +165,25 @@
             text-decoration: underline;
         }
 
-        /* Article Thumbnail Styling - Significantly Decreased Size */
-        .card-img {
+        /* Stylized Text Badge (Replaces Unlicensed Images) */
+        .card-badge {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #38bdf8;
+            padding: 12px 18px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border-left: 4px solid #1d4ed8;
+        }
+
+        /* User Photo Styling (100% Safe) */
+        .card-img-safe {
             max-width: 100%;
             max-height: 220px;
             width: auto;
@@ -195,7 +216,7 @@
     <!-- Header / Intro -->
     <header>
         <div class="container">
-            <!-- Header Photo -->
+            <!-- Header Photo (Your Personal Photo - Safe) -->
             <img src="Greg Johnson Header Photo.jpg" alt="Greg Johnson" class="profile-img">
             
             <h1>Greg Johnson</h1>
@@ -221,73 +242,66 @@
             <h2>Featured Articles & Beat Reporting</h2>
             <div class="card-grid">
 
-                <!-- 1st Article -->
                 <div class="card">
-                    <img src="Article 3.jpg" alt="MLB All-Star Game" class="card-img">
+                    <!-- Personal/Safe Photo -->
+                    <img src="Article 8.jpg" alt="Ben Grable and James Cooper at Futures Game" class="card-img-safe">
                     <div class="meta">The Trentonian • MLB All-Star Week (July 2026)</div>
-                    <h3>Captivating Home Run Derby Highlights Fun MLB All-Star Week in Philadelphia</h3>
-                    <p>Column reflecting on the atmosphere, fan experience and top storylines from 2026 MLB All-Star festivities.</p>
-                    <a href="https://www.trentonian.com/2026/07/15/johnson-captivating-home-run-derby-highlights-fun-mlb-all-star-week-in-philadelphia/?share=hehmstoo5remn0yrrnfw" class="read-btn" target="_blank">Read Full Article &rarr;</a>
+                    <h3>Ben Grable, James Cooper Proud to Represent Yankees at MLB All-Star Futures Game</h3>
+                    <p>On-site coverage from Philadelphia highlighting Somerset Patriots pitcher Ben Grable and defensive coach James Cooper representing the New York Yankees at the 2026 MLB All-Star Futures Game.</p>
+                    <a href="https://www.trentonian.com/2026/07/12/ben-grable-james-cooper-proud-to-represent-yankees-at-mlb-all-star-futures-game/?share=tostntbanugwtg6ageuw" class="read-btn" target="_blank">Read Full Article &rarr;</a>
                 </div>
 
-                <!-- 2nd Article (Swapped: Ben Rice Home Run Derby) -->
                 <div class="card">
-                    <img src="Article 2.jpg" alt="Ben Rice Home Run Derby" class="card-img">
-                    <div class="meta">The Trentonian • MLB All-Star Week (July 2026)</div>
+                    <div class="card-badge">⚾ MLB All-Star Reporting</div>
+                    <div class="meta">The Trentonian • July 2026</div>
                     <h3>Yankees’ Ben Rice Fulfills Dream of Competing With Dad in MLB Home Run Derby</h3>
                     <p>On-site reporting from Philadelphia detailing Ben Rice’s path from unheralded minor leaguer to top MLB hitter and the Home Run Derby alongside his father.</p>
                     <a href="https://www.trentonian.com/2026/07/14/yankees-ben-rice-fulfills-dream-of-competing-with-dad-in-mlb-home-run-derby/?share=romitsberti2bootrdeg" class="read-btn" target="_blank">Read Full Article &rarr;</a>
                 </div>
 
-                <!-- 3rd Article (Swapped: Ben Grable & James Cooper Futures Game) -->
                 <div class="card">
-                    <img src="Article 8.jpg" alt="Ben Grable and James Cooper at Futures Game" class="card-img">
-                    <div class="meta">The Trentonian • MLB All-Star Week (July 2026)</div>
-                    <h3>Ben Grable, James Cooper Proud to Represent Yankees at MLB All-Star Futures Game</h3>
-                    <p>On-site coverage from Philadelphia highlighting Somerset Patriots pitcher Ben Grable and manager James Cooper representing the New York Yankees at the MLB All-Star Futures Game.</p>
-                    <a href="https://www.trentonian.com/2026/07/12/ben-grable-james-cooper-proud-to-represent-yankees-at-mlb-all-star-futures-game/?share=tostntbanugwtg6ageuw" class="read-btn" target="_blank">Read Full Article &rarr;</a>
+                    <div class="card-badge">⚾ Column & Analysis</div>
+                    <div class="meta">The Trentonian • July 2026</div>
+                    <h3>Captivating Home Run Derby Highlights Fun MLB All-Star Week in Philadelphia</h3>
+                    <p>Column reflecting on the atmosphere, fan experience and top storylines from 2026 MLB All-Star festivities.</p>
+                    <a href="https://www.trentonian.com/2026/07/15/johnson-captivating-home-run-derby-highlights-fun-mlb-all-star-week-in-philadelphia/?share=hehmstoo5remn0yrrnfw" class="read-btn" target="_blank">Read Full Article &rarr;</a>
                 </div>
 
-                <!-- 4th Article -->
                 <div class="card">
-                    <img src="Article 7.jpg" alt="Robbinsville Alums Football Feature" class="card-img">
-                    <div class="meta">The Trentonian • Local Football Feature (June 2026)</div>
+                    <div class="card-badge">🏈 Local Football Feature</div>
+                    <div class="meta">The Trentonian • June 2026</div>
                     <h3>Robbinsville Alums Staying Involved in Football as College, NFL Employees</h3>
                     <p>Feature story on Robbinsville High School alumni pursuing careers in football operations across college and the NFL.</p>
                     <a href="https://www.trentonian.com/2026/06/24/robbinsville-alums-staying-involved-in-football-as-college-nfl-employees/?share=s2tabwwngri0aeopiese" class="read-btn" target="_blank">Read Full Article &rarr;</a>
                 </div>
 
-                <!-- 5th Article -->
                 <div class="card">
-                    <img src="Article 4.jpg" alt="Nick Torres Feature" class="card-img">
-                    <div class="meta">The Trentonian • Somerset Patriots / Yankees (June 2026)</div>
+                    <div class="card-badge">⚾ Somerset Patriots / Yankees</div>
+                    <div class="meta">The Trentonian • June 2026</div>
                     <h3>'I Believe That I'm Here For A Reason': Nick Torres Soaks In Journey From Mexican League To Yankees</h3>
                     <p>In-depth profile covering Nick Torres’s unique journey through international baseball to the New York Yankees organization.</p>
                     <a href="https://www.trentonian.com/2026/06/15/i-believe-that-im-here-for-a-reason-nick-torres-soaks-in-journey-from-mexican-league-to-yankees/?share=rswehteosromwne6kree" class="read-btn" target="_blank">Read Full Article &rarr;</a>
                 </div>
 
-                <!-- 6th Article -->
                 <div class="card">
-                    <img src="Article 1.jpg" alt="Justin Pugh Profile" class="card-img">
-                    <div class="meta">The Trentonian • NFL Feature (November 2023)</div>
+                    <div class="card-badge">🏈 NFL Feature Story</div>
+                    <div class="meta">The Trentonian • November 2023</div>
                     <h3>From Bucks County to the NFL: How Justin Pugh Became One of the Top Offensive Linemen</h3>
                     <p>Long-form feature tracing local star Justin Pugh’s roots from Bucks County to the New York Giants and a lengthy NFL career.</p>
                     <a href="https://www.trentonian.com/2023/11/09/from-bucks-county-to-the-nfl-how-justin-pugh-became-one-of-the-top-offensive-linemen/?share=cunonvpppowotrthhote" class="read-btn" target="_blank">Read Full Article &rarr;</a>
                 </div>
 
-                <!-- 7th Article -->
                 <div class="card">
-                    <img src="Article 5.jpg" alt="Super Bowl LIV Andy Reid" class="card-img">
-                    <div class="meta">The Trentonian • Super Bowl LIV Coverage (February 2020)</div>
+                    <div class="card-badge">🏆 Super Bowl LIV Coverage</div>
+                    <div class="meta">The Trentonian • February 2020</div>
                     <h3>Andy Reid’s Legacy is Complete After Chiefs Rally for Historic Super Bowl LIV Victory</h3>
                     <p>On-the-ground Super Bowl LIV game coverage from Miami capturing Andy Reid’s historic championship triumph.</p>
                     <a href="https://www.trentonian.com/2020/02/03/andy-reids-legacy-is-complete-after-chiefs-rally-for-historic-super-bowl-liv-victory/?share=0iciiicttlro3oleoe2i" class="read-btn" target="_blank">Read Full Article &rarr;</a>
                 </div>
 
-                <!-- 8th Article -->
                 <div class="card">
-                    <img src="Article 6.jpg" alt="Super Bowl Fans Feature" class="card-img">
-                    <div class="meta">The Trentonian • Super Bowl LIV Feature (February 2020)</div>
+                    <div class="card-badge">🏈 Super Bowl Human Interest</div>
+                    <div class="meta">The Trentonian • February 2020</div>
                     <h3>Longtime Chiefs Fans Fly From Iowa to Miami for Unforgettable Super Bowl LIV Experience</h3>
                     <p>Human-interest feature capturing the dedication and journey of diehard Kansas City Chiefs fans at Super Bowl LIV.</p>
                     <a href="https://www.trentonian.com/2020/02/02/longtime-chiefs-fans-fly-from-iowa-to-miami-for-unforgettable-super-bowl-liv-experience/?share=eren0rfexplaclhtelpw" class="read-btn" target="_blank">Read Full Article &rarr;</a>
