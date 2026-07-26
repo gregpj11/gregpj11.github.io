@@ -24,6 +24,31 @@
             line-height: 1.6;
         }
 
+        /* Top Navigation Bar */
+        .site-nav {
+            background-color: #020617;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .site-nav .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+        .site-nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: color 0.2s;
+        }
+        .site-nav a:hover,
+        .site-nav a.active {
+            color: #38bdf8;
+        }
+
         .container {
             max-width: 850px;
             margin: 0 auto;
@@ -93,6 +118,15 @@
         .social-links a:hover {
             background-color: var(--accent);
             transform: translateY(-1px);
+        }
+
+        /* Highlighted Resume Pill Link */
+        .social-links a.resume-pill {
+            background-color: #1d4ed8;
+            color: #ffffff;
+        }
+        .social-links a.resume-pill:hover {
+            background-color: #1e40af;
         }
 
         /* Action Photo Styling */
@@ -216,6 +250,14 @@
 </head>
 <body>
 
+    <!-- Top Navigation Bar -->
+    <nav class="site-nav">
+        <div class="nav-container">
+            <a href="index.html" class="active">Portfolio</a>
+            <a href="resume.html">Resume</a>
+        </div>
+    </nav>
+
     <!-- Header / Intro -->
     <header>
         <div class="container">
@@ -228,8 +270,9 @@
                 Greg Johnson has been a professional sports journalist for more than a decade with <em>The Trentonian</em> and affiliated local newspapers within MediaNews Group. He covers the New York Giants, the Somerset Patriots (New York Yankees’ Double-A affiliate), high schools and colleges. His versatile reporting has taken him to major events including Super Bowl LIV in Miami and the 2026 MLB All-Star Week in Philadelphia.
             </p>
             
-            <!-- 2. Social Links -->
+            <!-- 2. Social Links & Resume Pill -->
             <div class="social-links">
+                <a href="resume.html" class="resume-pill">📄 View Resume</a>
                 <a href="mailto:gjohnson@trentonian.com">Email Me</a>
                 <a href="https://x.com/gregp_j" target="_blank">X / Twitter (@gregp_j)</a>
                 <a href="https://instagram.com/gregjnj" target="_blank">Instagram (@gregjnj)</a>
