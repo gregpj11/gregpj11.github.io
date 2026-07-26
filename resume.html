@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Greg Johnson</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1e293b;
+      background-color: #f8fafc;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 20px;
+      background-color: #0f172a;
+    }
+    .navbar a {
+      color: #f8fafc;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+    .navbar a:hover,
+    .navbar a.active {
+      color: #38bdf8;
+    }
+
+    /* Resume Container */
+    .resume-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .resume-header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+    .resume-header h1 {
+      margin-bottom: 5px;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .contact-info {
+      font-size: 0.95rem;
+      color: #475569;
+      margin-bottom: 12px;
+    }
+    .contact-info a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #0f172a;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .download-btn:hover {
+      background-color: #334155;
+    }
+    .resume-section {
+      margin-bottom: 30px;
+    }
+    .resume-section h2 {
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #0f172a;
+    }
+    .job-title {
+      font-weight: bold;
+      font-size: 1.05rem;
+    }
+    .job-meta {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+    ul {
+      margin: 5px 0 15px 20px;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="resume.html" class="active">Resume</a>
+  </nav>
+
+  <div class="resume-container">
+    <!-- Header & Download Button -->
+    <header class="resume-header">
+      <h1>Greg Johnson</h1>
+      <div class="contact-info">
+        Lawrenceville, NJ &bull; (609) 802-7806 &bull; <a href="mailto:gregpj11@gmail.com">gregpj11@gmail.com</a> &bull; <a href="https://gregjohnsonsports.com">gregjohnsonsports.com</a>
+      </div>
+      <a href="Greg_Johnson_Resume.pdf" class="download-btn" download>Download PDF Resume</a>
+    </header>
+
+    <!-- Summary -->
+    <section class="resume-section">
+      <h2>Summary</h2>
+      <p>Versatile sports journalist with over a decade of beat reporting experience covering the NFL (Giants), MiLB (Yankees farm system), Division I athletics and high schools. Award-winning writer and podcast host skilled in long-form features, opinion columns, fast-paced deadline coverage, copy editing and digital media production. Track record includes major event coverage from the Super Bowl to MLB All-Star Week.</p>
+    </section>
+
+    <!-- Experience -->
+    <section class="resume-section">
+      <h2>Experience</h2>
+      
+      <div class="job">
+        <div class="job-title">Sports Reporter & Copy Editor — The Trentonian</div>
+        <div class="job-meta">Trenton, NJ | September 2015 – Present</div>
+        <ul>
+          <li>Lead beat coverage of the New York Giants and Somerset Patriots, delivering breaking news, gamers, features and columns. Also cover Princeton University athletics and local high schools.</li>
+          <li>Co-host the "Patriots Press Podcast" with New York Yankees prospect updates, analysis and discussion.</li>
+          <li>Beat highlights: In-depth profile of Giants offensive lineman Justin Pugh's upbringing in Bucks County and his 11-year NFL career; on-the-ground coverage from national events including Super Bowl LIV in Miami and the 2026 MLB All-Star Week.</li>
+          <li>Serve as copy editor: manage daily sports budgets, write sharp headlines, edit reporter copy for AP Style, assign stories to pages, publish digital content and co-manage the @SportsTrenton X account.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Freelance Reporter — The Catholic Spirit</div>
+        <div class="job-meta">Metuchen, NJ | August 2023 – Present</div>
+        <ul>
+          <li>Research story ideas and contribute features on athletes and coaches; for example, a story on elite WNBA prospect Olivia Miles' family background and local roots in the Catholic school system.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Sports Editor — The Daily Targum</div>
+        <div class="job-meta">Rutgers University | February 2014 – February 2015</div>
+        <ul>
+          <li>Directed coverage of Rutgers' inaugural Big Ten season, managing a staff of 8 writers and 2 associate editors. Designed 4-to-8 page daily layouts in InDesign.</li>
+          <li>Covered Rutgers football and men's basketball on deadline with gamers, previews and features.</li>
+          <li>Previously ascended the titles of Contributing Writer, Correspondent and Associate Sports Editor, authoring over 300 stories.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="resume-section">
+      <h2>Awards</h2>
+      <ul>
+        <li><strong>First Place, Best Sports Journalism – Sports News (National Contest)</strong>, Catholic Media Association | June 2026</li>
+        <li><strong>Tony Persichilli Meritorious Service Award</strong>, National Football Foundation & College Hall of Fame (Delaware Valley Chapter) | March 2025</li>
+        <li><strong>Second Place, Sports Writing</strong>, New Jersey Press Association | April 2015</li>
+      </ul>
+    </section>
+
+    <!-- Education & Skills -->
+    <section class="resume-section">
+      <h2>Education & Skills</h2>
+      <ul>
+        <li><strong>Education:</strong> B.A. in Journalism & Media Studies (Sports Specialization), Minor in Psychology | Rutgers University (GPA: 3.2)</li>
+        <li><strong>Technical & Media Skills:</strong> AP Style, WordPress, InDesign, InCopy, Audio/Podcast Editing, Social Media Strategy (X, Instagram, Threads, Facebook, TikTok)</li>
+        <li><strong>Beat & Sport Coverage Experience:</strong> Football, basketball, baseball, softball, soccer, lacrosse, field hockey, ice hockey, track & field, swimming, gymnastics, tennis, golf, drag racing</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>
